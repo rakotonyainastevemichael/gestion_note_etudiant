@@ -18,7 +18,7 @@ moyenne = mean(usernote)
 
 print("Résultats :")
 for i in range(5):
-    resultat = ("Réussi", "Échoué")[usernote[i] < 10]  # "<" au lieu de "<="
+    resultat = ("Réussi", "Échoué")[usernote[i] <= 10]  
     print(f"{username[i]} : {usernote[i]} - {resultat}")
 
 print(f"La moyenne de la classe est : {moyenne}")
